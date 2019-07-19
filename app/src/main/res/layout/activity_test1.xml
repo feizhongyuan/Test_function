@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.test.Test1Activity">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加日程"
+        />
+    <Button
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除日程"
+        />
+    <Button
+        android:id="@+id/add_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询日程"
+        />
+    <Button
+        android:id="@+id/del_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除日程"
+        />
+
+</LinearLayout>

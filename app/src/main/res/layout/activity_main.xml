@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.calendar.MainActivity">
+
+    <Button
+        android:id="@+id/mBt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加日程"
+        />
+    <Button
+        android:id="@+id/mBt_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除日程"
+        />
+
+    <Button
+        android:id="@+id/mBt_delete_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按标题删除日程"
+        />
+    <Button
+        android:id="@+id/mBt_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询所有日程"
+        />
+
+</LinearLayout>
