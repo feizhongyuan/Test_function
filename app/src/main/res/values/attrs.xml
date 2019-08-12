@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义图-->
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <!--九宫格布局-->
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+
+    <!--圆形进度条-->
+    <!--注意这里的name要和自定义View的名称一致，不然在xml布局中无法引用-->
+    <declare-styleable name="CircleBarView">
+        <attr name="progress_color" format="color"></attr>
+        <attr name="bg_color" format="color"></attr>
+
+        <attr name="bar_width" format="dimension"></attr>
+
+        <attr name="start_angle" format="float"></attr>
+        <attr name="sweep_angle" format="float"></attr>
+    </declare-styleable>
+    <declare-styleable name="WaveProgressView">
+        <attr name="wave_color" format="color"></attr>
+        <attr name="second_wave_color" format="color"></attr>
+        <attr name="wave_bg_color" format="color"></attr>
+
+        <attr name="wave_width" format="dimension"></attr>
+        <attr name="wave_height" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--角标-->
+    <declare-styleable name="SuperscriptView">
+        <attr name="rightEdge" format="dimension" />
+        <attr name="leftEdge" format="dimension" />
+        <attr name="topEdge" format="dimension" />
+        <attr name="smallLeftEdge" format="dimension" />
+        <attr name="smallRightEdge" format="dimension" />
+        <attr name="smallTopEdge" format="dimension" />
+        <attr name="gravity">
+            <flag name="leftTop" value="1" />
+            <flag name="rightTop" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--角标 LabelView-->
+    <declare-styleable name="LabelView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="textTitleColor" format="color"/>
+        <attr name="textContentColor" format="color"/>
+
+        <attr name="textTitle" format="string"/>
+        <attr name="textContent" format="string"/>
+
+        <attr name="textTitleSize" format="dimension"/>
+        <attr name="textContentSize" format="dimension"/>
+
+        <attr name="labelTopPadding" format="dimension"/>
+        <attr name="labelCenterPadding" format="dimension"/>
+        <attr name="labelBottomPadding" format="dimension"/>
+        <!--标签最远距离-->
+        <attr name="labelTopDistance" format="dimension"/>
+
+        <attr name="textTitleStyle">
+            <enum name="normal" value="0"/>
+            <enum name="italic" value="1"/>
+            <enum name="bold" value="2"/>
+        </attr>
+
+        <attr name="textContentStyle">
+            <enum name="normal" value="0"/>
+            <enum name="italic" value="1"/>
+            <enum name="bold" value="2"/>
+        </attr>
+
+        <attr name="direction">
+            <enum name="leftTop" value="-45"/>
+            <enum name="rightTop" value="45"/>
+        </attr>
+    </declare-styleable>
+
+    <!--SlideBottomPanel-->
+    <declare-styleable name="SlideBottomPanel">
+        <attr name="sbp_background_layout" format="reference"/>
+        <attr name="sbp_title_height_no_display" format="dimension"/>
+        <attr name="sbp_panel_height" format="dimension"/>
+        <attr name="sbp_boundary" format="boolean"/>
+        <attr name="sbp_move_distance_trigger" format="dimension"/>
+        <attr name="sbp_animation_duration" format="integer"/>
+        <attr name="sbp_fade" format="boolean"/>
+        <attr name="sbp_hide_panel_title" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mSwipeLayout"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:id="@+id/ll_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:tag="Sideslipe"
+        >
+
+        <TextView
+            android:id="@+id/collection"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#757575"
+            android:gravity="center"
+            android:text="加入收藏" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#c5c5c5"
+            android:gravity="center"
+            android:text="移除" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="aasdasd"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

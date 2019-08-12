@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.calendar">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,20 +14,67 @@
     <!-- android 9.0上使用前台服务，需要添加权限 -->
     <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> -->
     <application
+        android:name="com.example.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name="com.example.citylist.CityListActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
+        <!-- 城市列表展示 -->
+        <activity android:name="com.example.citylist.CityListActivity" />
+        <!-- 购物车展示 -->
         <activity android:name="com.example.shoppingcart.ShoppingCartActivity" />
         <activity android:name=".TestActivity" />
-        <activity android:name="com.example.test.Test1Activity"></activity>
-        <activity android:name="com.example.demo.DemoActivity">
+        <activity android:name="com.example.test.Test1Activity" />
+        <activity android:name="com.example.demo.DemoActivity" />
+        <!-- 侧滑展示 -->
+        <activity android:name="com.example.sideslip.SideslipActivity" />
+        <!-- 网络状态展示 -->
+        <activity android:name="com.example.network.NetworkActivity" />
+
+        <!-- 网络广播接受器 -->
+        <receiver
+            android:name="com.example.network.NetBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+        <!-- 清除输入框全部内容 -->
+        <activity android:name="com.example.clearedittext.ClearEditTextActivity" />
+        <!-- 九宫格图展示 -->
+        <activity android:name="com.example.multi_graph.RecyclerViewExampleActivity" />
+        <!-- 九宫格图展示2 -->
+        <activity android:name="com.example.multi_graph.ExampleActivity" />
+        <!-- 自定义进度条展示 -->
+        <activity android:name="com.example.progressbar.ProgressBarActivity"></activity>
+        <activity android:name="com.example.textview.TextViewActivity" />
+        <activity android:name="com.example.textview.label.LabelActivity" />
+        <activity android:name="com.example.progressbar_dialog.ProgressBarDialogActivity" />
+        <activity android:name="com.example.progressbar.ArcProressBarActivity" />
+        <activity android:name="com.example.radiobutton.RadioButtonActivity" />
+        <activity android:name="com.example.cache_data.CacheMainActivity"></activity>
+        <activity android:name="com.example.cache_data.AboutActivity" />
+        <activity android:name="com.example.cache_data.SaveBitmapActivity" />
+        <activity android:name="com.example.cache_data.SaveJsonObjectActivity" />
+        <activity android:name="com.example.cache_data.SaveObjectActivity" />
+        <activity android:name="com.example.cache_data.SaveStringActivity" />
+        <activity android:name="com.example.cache_data.SaveMediaActivity" />
+        <activity
+            android:name="com.example.cache_data.SaveDrawableActivity"
+            android:label="@string/title_activity_save_drawable" />
+        <activity
+            android:name="com.example.cache_data.SaveJsonArrayActivity"
+            android:label="@string/title_activity_save_json_array" />
+        <activity android:name="com.example.cache_data.Cache2Activity">
+
+        </activity>
+        <activity android:name="com.example.suctiontop.SuctionTopActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

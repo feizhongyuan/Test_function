@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Calendar</string>
+
+    <string name="icon_home">&#xe60d;</string>
+
+    <string name="title_activity_save_drawable">SaveDrawableActivity</string>
+    <string name="title_activity_save_json_array">SaveJsonArrayActivity</string>
 </resources>
